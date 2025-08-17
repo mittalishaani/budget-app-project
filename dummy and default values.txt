@@ -1,0 +1,108 @@
+NEED TO MAKE DUMMY BUDGETTTT
+
+----------------------
+dummy user
+
+INSERT INTO users (
+    user_id,
+    username,
+    email,
+    password
+) VALUES (
+    1,                  -- id = 001, but NUMBER ignores leading zeros
+    'default', 
+    'abc@email.com', 
+    'abcd'
+);
+
+
+------------------------------
+categories
+
+-- Income Categories
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Salary & Wages');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Business & Freelance Income');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Investments & Interest');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Rental Income');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Gifts & Refunds');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Other Income');
+
+-- Expense Categories
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Housing & Utilities');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Transportation');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Food & Dining');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Health & Fitness');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Shopping');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Entertainment & Leisure');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Education');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Financial Obligations & Savings');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Personal Care');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Gifts & Donations');
+INSERT INTO categories (user_id, category_name) VALUES (1, 'Miscellaneous');
+
+----------------------------------
+currencies
+
+INSERT INTO currency (currency_code, symbol, name, exchange_rate_to_base)
+VALUES (1, '₹', 'Indian Rupee', 1.000000);
+
+INSERT INTO currency (currency_code, symbol, name, exchange_rate_to_base)
+VALUES (2, '€', 'Euro', 91.500000);
+
+INSERT INTO currency (currency_code, symbol, name, exchange_rate_to_base)
+VALUES (3, '£', 'British Pound', 108.300000);
+
+INSERT INTO currency (currency_code, symbol, name, exchange_rate_to_base)
+VALUES (4, '$', 'US Dollar', 83.200000);
+
+-----------------------------------
+transaction dummies
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 34, 1, 75000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 35, 1, 15000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 36, 1, 20000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 37, 1, 10000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 38, 1, 5000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 39, 1, 2000.00, 'credit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 40, 1, 30000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 41, 1, 5000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 42, 1, 8000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 43, 1, 3000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 44, 1, 10000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 45, 1, 2000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 46, 1, 15000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 47, 1, 2500.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 48, 1, 5000.00, 'debit');
+
+INSERT INTO transactions (user_id, category_id, currency_code, amount, type)
+VALUES (1, 49, 1, 1000.00, 'debit');
+-------------------------------------
